@@ -72,12 +72,29 @@ plotly
 shap
 ```
 
+### Technical Setup
+
+1. Make sure you have Python 3.x installed
+2. Create and activate a virtual environment (recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. Download the dataset from Kaggle and place it in the `data/` directory
+
 ### Installation
 
 ```bash
+# Clone the repository
 git clone https://github.com/yourusername/advanced-credit-card-fraud-detection.git
 cd advanced-credit-card-fraud-detection
+
+# Install required packages
 pip install -r requirements.txt
+
+# Download dataset (requires Kaggle API setup)
+kaggle datasets download -d mlg-ulb/creditcardfraud
+unzip creditcardfraud.zip -d data/
 ```
 
 ### Usage
